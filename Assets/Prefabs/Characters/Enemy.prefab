@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 7230559571337042266}
   - component: {fileID: 7230559571337042267}
   - component: {fileID: 7230559571337042264}
-  - component: {fileID: 7230559571337042247}
   - component: {fileID: 8963732241362879343}
+  - component: {fileID: 7230559571337042247}
   - component: {fileID: 1032848723}
   - component: {fileID: 8555545088771234338}
   m_Layer: 0
@@ -120,20 +120,6 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &7230559571337042247
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7230559571337042265}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15eb357d0e1d0d249aac84fa0b24811b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  chaseRange: 5
 --- !u!95 &8963732241362879343
 Animator:
   serializedVersion: 3
@@ -153,6 +139,21 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &7230559571337042247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7230559571337042265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15eb357d0e1d0d249aac84fa0b24811b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  chaseRange: 10
+  turnSpeed: 5
 --- !u!114 &1032848723
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -178,6 +179,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30e3e0167210b1b4bb099ee2674b9e46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 40
 --- !u!1 &8852644922855054739
 GameObject:
   m_ObjectHideFlags: 0

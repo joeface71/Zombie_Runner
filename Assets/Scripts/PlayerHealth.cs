@@ -12,7 +12,7 @@ public class PlayerHealth : MonoBehaviour
 
         if (hitPoints <= 0)
         {
-            print("you dead");
+            FindObjectOfType<DeathHandler>().HandleDeath();
         }
     }
 }
